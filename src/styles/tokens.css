@@ -1,0 +1,36 @@
+:root {
+  --bg: #F5F6F8; --surface: #FFFFFF; --surface-2: #F2F4F7;
+  --line: #E4E7EC; --line-strong: #D0D5DD;
+  --fg: #101828; --fg-2: #475467; --fg-3: #667085;
+  --accent: #1D4ED8; --accent-weak: #E8EEFC; --on-accent: #FFFFFF;
+  --neutral: #667085; --muted-bar: #D0D5DD;
+  --cluster: #344054; --cluster-fg: #FFFFFF; --marker-ring: #FFFFFF;
+  --shadow: 0 12px 32px rgba(16, 24, 40, .14);
+  --chart: #A0CFBD; /* 차트 주색: 로고 세이지 그린 */
+  --font: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1117; --surface: #161A22; --surface-2: #1E232D;
+    --line: #272D39; --line-strong: #38404E;
+    --fg: #E8EBF1; --fg-2: #B2B9C6; --fg-3: #8890A0;
+    --accent: #7AA2FF; --accent-weak: #1B2645; --on-accent: #0E1117;
+    --neutral: #8890A0; --muted-bar: #38404E;
+    --cluster: #E8EBF1; --cluster-fg: #101828; --marker-ring: #1A1E26;
+    --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1117; --surface: #161A22; --surface-2: #1E232D;
+  --line: #272D39; --line-strong: #38404E;
+  --fg: #E8EBF1; --fg-2: #B2B9C6; --fg-3: #8890A0;
+  --accent: #7AA2FF; --accent-weak: #1B2645; --on-accent: #0E1117;
+  --neutral: #8890A0; --muted-bar: #38404E;
+  --cluster: #E8EBF1; --cluster-fg: #101828; --marker-ring: #1A1E26;
+  --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 14px; line-height: 1.5; }
+.num { font-variant-numeric: tabular-nums; }
